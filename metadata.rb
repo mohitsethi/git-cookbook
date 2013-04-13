@@ -15,8 +15,6 @@ end
 
 supports "mac_os_x", ">= 10.6.0"
 
-%w{ dmg build-essential yum windows }.each do |cookbook|
+%w{ dmg build-essential yum windows runit }.each do |cookbook|
   depends cookbook
 end
-
-depends "runit", "<= 0.16.2"
