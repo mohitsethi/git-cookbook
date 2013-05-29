@@ -44,3 +44,8 @@ when "mac_os_x"
 else
   package "git"
 end
+
+# Install git-review
+python_pip "git-review" do
+  action :install
+end
